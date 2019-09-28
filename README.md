@@ -1,6 +1,6 @@
-# delijn-sensor
+# stib-mivb-sensor
 
-This code can be used to add a custom sensor for De Lijn public transport of Flanders (Belgium) to Home Assistant.
+This code can be used to add a custom sensor for STIB/MIVB public transport of Brussels (Belgium) to Home Assistant.
 
 **_Note:_** the idea is to eventually add this to the code of Home Assistant itself
 
