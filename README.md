@@ -8,8 +8,8 @@ This code can be used to add a custom sensor for STIB/MIVB public transport of B
 
 | Name | Type | Requirement | Description
 | ---- | ---- | ------- | -----------
-| platform | string | **Required** | `delijn`
-| sub_key | string | **Required** | The subscription key generated in a developer account at data.delijn.be.
+| platform | string | **Required** | `stibmivb`
+| sub_key | string | **Required** | The subscription key generated in a developer account at opendata.stib-mivb.be.
 | nextpassages | object | **Required** | List of stops to display next passages of.
 
 ## nextpassages object
@@ -34,21 +34,21 @@ mv delijn.py ~/.homeassistant//custom_components/sensor/
 
 ### Step 2
 
-Set up the De Lijn custom sensor.
+Set up the STIB/MIVB custom sensor.
 
 **Example:**
 
 ```yaml
 sensor:
-  - platform: delijn
-    sub_key: '<put your data.delijn.be subscriptionkey here>'
+  - platform: stibmivb
+    sub_key: '<put your opendata.stib-mivb.be subscriptionkey here>'
     nextpassage:
     - stop_id: '200552'
       max_passages: 10
     - stop_id: '201169'
       max_passages: 5
 ```
-**_Note_**: replace with the subscription key you generated with you data.delijn.be developer account.
+**_Note_**: replace with the subscription key you generated with you opendata.stib-mivb.be developer account.
 
 ## Credits
 
